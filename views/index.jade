@@ -1,0 +1,70 @@
+!!!5
+html
+  head
+    != masher.style('common')
+  body
+    div.header 
+      div.frame
+        div.phone
+          img.item.item1(src="ui/images/ss1.png")
+          //-div.slider
+            div.container
+              img.item.item1(src="ui/images/ss1.png")
+              img.item.item2(src="ui/images/ss1.png")
+              img.item.item3(src="ui/images/ss1.png")
+      div.stripe
+        div.frame
+          h1.logo: a(href="http://itunes.apple.com/app/jotbox/id533457695?mt=8") Jotbox
+      div.frame.copy
+        p.callout1 No more forgetting.
+        p.callout2 Jotbox is the perfect way to send yourself a note, idea or reminder.
+        a.appstore(href="http://itunes.apple.com/app/jotbox/id533457695?mt=8")
+    div.content
+      div.frame
+        div.col
+          h2 Features
+          dl
+            dt Fast
+            dd The instant you click on Jotbox, it is ready for your note, idea or reminder.
+            dt Never Forget
+            dd All your notes get sent to your email inbox.  Do you check anything more often than your email?
+            dt Any Input
+            dd You can jot your note down using the keyboard, scribble with your finger or by taking a photo. 
+            dt Offline
+            dd Even if you don't have an internet connection, Jotbox will store your notes for you and send them when you get online.
+        div.col
+          h2 Tips
+          dl 
+            dt Evernote
+            dd Tell Jotbox to send to your evernote email address to get all of our notes in evernote.  Evernote will even OCR your scribbles!
+            dt IFTTT
+            dd Coming soon!
+            dt Remember the Milk
+            dd Coming soon!
+        div.col.last
+          h2#contact Contact
+          p If you have a suggestion or need support, email 
+            a(href="mailto:feedback@jotboxed.com") feedback@jotboxed.com 
+            | or tweet 
+            a(href="http://twitter.com/jotboxed") @jotboxed
+          h2#privacy Privacy
+          p We do not store your email or your notes on our servers.
+    div.footer
+      div.frame
+        ul.hl
+          li: a(href="http://twitter.com/jotboxed") Twitter
+          li: a.last(href="https://groups.google.com/forum/?hl=en&fromgroups#!forum/jotbox") Google Group
+        div.copyright &copy; 2012 JGA
+
+    if preview
+      script(src="/stalk.js")
+    script
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33124957-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();

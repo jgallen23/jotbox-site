@@ -1,0 +1,22 @@
+{
+  "masher": {
+    "assetPath": "",
+    "outputDir": "ui/_compressed",
+    "publicPath": "",
+    "groups": {
+      "common": {
+        "styles": [
+          "ui/stylesheets/common.styl"
+        ]
+      }
+    },
+    "plugins": {
+      "pre": [
+        "stylus"
+      ],
+      "post": [
+        "compress"
+      ]
+    }
+  }
+}

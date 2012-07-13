@@ -1,0 +1,37 @@
+item-width = -234px
+
+.slider {
+	overflow: hidden;
+
+	.container {
+		width: 30000px;
+		animation: slide 10s linear infinite;
+	}
+	.item {
+		float: left;
+	}
+}
+
+@keyframes slide {
+  0% {
+		transform: translateX(0);
+  }
+  16% {
+		transform: translateX(0);
+  }
+  32% {
+		transform: translateX(item-width);
+  }
+  48% {
+		transform: translateX(item-width);
+  }
+  64% {
+		transform: translateX(item-width*2);
+  }
+	80% {
+		transform: translateX(item-width*2);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
