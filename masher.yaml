@@ -1,0 +1,8 @@
+mash:
+  -
+    name: common
+    files:
+      - ui/stylesheets/common.styl
+options:
+  minify: true
+  out: ui/_compressed

@@ -1,8 +1,11 @@
-build:
-	@./node_modules/.bin/markx --input views/index.jade markx.json > dist/index.html
+mash: 
+	@./node_modules/.bin/masher masher.yaml
 
-preview:
-	@./node_modules/.bin/markx --input views/index.jade --preview 8000 markx.json 
+build: mash
+	@./node_modules/.bin/markx --input views/index.jade > dist/index.html
+
+preview: mash
+	@./node_modules/.bin/markx --input views/index.jade --preview 8000
 
 
-.PHONY: build
+.PHONY: build mash preview

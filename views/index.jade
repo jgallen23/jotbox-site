@@ -1,7 +1,7 @@
 !!!5
 html
   head
-    != masher.style('common')
+    link(rel="stylesheet", href="ui/_compressed/common.min.css")
   body
     div.header 
       div.frame
@@ -18,7 +18,8 @@ html
       div.frame.copy
         p.callout1 No more forgetting.
         p.callout2 Jotbox is the perfect way to send yourself a note, idea or reminder.
-        a.appstore(href="http://itunes.apple.com/app/jotbox/id533457695?mt=8")
+        p: a.appstore(href="http://itunes.apple.com/app/jotbox/id533457695?mt=8")
+        p: a.appstore-free(href="http://itunes.apple.com/app/jotbox-lite-email-yourself/id543623199?mt=8") Free version available.
     div.content
       div.frame
         div.col
@@ -47,6 +48,10 @@ html
             a(href="mailto:feedback@jotboxed.com") feedback@jotboxed.com 
             | or tweet 
             a(href="http://twitter.com/jotboxed") @jotboxed
+          h2 Not Receiving Emails? 
+          p Double check that you typed your email correctly in Jotbox, and then check your junk folder. 
+            a(href="mailto:feedback@jotboxed.com") Email
+            | &nbsp;us if you are still having issues.
           h2#privacy Privacy
           p We do not store your email or your notes on our servers.
     div.footer
@@ -56,7 +61,7 @@ html
           li: a.last(href="https://groups.google.com/forum/?hl=en&fromgroups#!forum/jotbox") Google Group
         div.copyright &copy; 2012 JGA
 
-    if preview
+    //-if preview
       script(src="/stalk.js")
     script
       var _gaq = _gaq || [];
